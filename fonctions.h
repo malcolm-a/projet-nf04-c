@@ -58,7 +58,8 @@ int tabpoly(const char chaine[], struct polynome polynome[], int degre_max) {
         if (chaine[i] >= '0' && chaine[i] <= '9') {
             coeff = chaine[i] - '0';
             i++;
-        } else {
+        } 
+        else {
             coeff = 1;
         }
         
@@ -71,10 +72,12 @@ int tabpoly(const char chaine[], struct polynome polynome[], int degre_max) {
             if (chaine[i] >= '0' && chaine[i] <= '9') {
                 exp = chaine[i] - '0';
                 i++;
-            } else {
+            } 
+            else {
                 exp = 1;
             }
-        } else {
+        } 
+        else {
             exp = 0;
         }
         i = skip_spaces(chaine, i);
