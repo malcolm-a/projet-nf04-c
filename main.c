@@ -20,8 +20,6 @@ int main(int argc, const char *argv[]) {
     printf("Entrez votre premier polynôme\n");
     fgets(chainea, sizeof(chainea), stdin);
 
-
-
     deg1 = tabpoly(chainea, poly1, 5);
     if (deg1 < 0)
         
@@ -37,7 +35,6 @@ int main(int argc, const char *argv[]) {
     printf("Entrez votre second polynôme\n");
     if (!fgets(chaineb, sizeof(chainea), stdin))
         return 1;
-
 
     deg2 = tabpoly(chaineb, poly2, 5);
     if (deg2 < 0)
@@ -61,7 +58,6 @@ int main(int argc, const char *argv[]) {
           else
               printf("Erreur de saisie\n");
     
-          
       if (deg1 > deg2)
           deg3 = deg1;
       else
